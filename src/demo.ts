@@ -2,6 +2,8 @@ import { BigNumber, providers, Wallet } from 'ethers'
 import { FlashbotsBundleProvider, FlashbotsBundleResolution } from './index'
 import { TransactionRequest } from '@ethersproject/abstract-provider'
 import { v4 as uuidv4 } from 'uuid'
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 const FLASHBOTS_AUTH_KEY = process.env.FLASHBOTS_AUTH_KEY
 
